@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+results/count.log
+.venv/

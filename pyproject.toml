@@ -1,0 +1,21 @@
+[project]
+name = "agent-commits"
+version = "0.1.0"
+description = "Öffentliche GitHub-Commits mit KI-Agent als Co-Autor je Monat zählen"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+charts = ["matplotlib", "pillow"]
+dev = ["pyflakes", "pylint", "pyright"]
+
+[tool.pyright]
+include = ["scripts"]
+typeCheckingMode = "standard"
+
+[tool.pylint."messages control"]
+disable = ["missing-module-docstring", "missing-function-docstring", "too-many-locals",
+           "too-many-statements"]
+
+[tool.pylint.format]
+max-line-length = 100
